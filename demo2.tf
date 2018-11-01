@@ -213,7 +213,7 @@ resource "aws_ebs_volume" "example" {
 
 resource "aws_cloudtrail" "example" {
 
-  is_multi_region_trail = false
+  is_multi_region_trail = true
   enable_log_file_validation = false
 
   event_selector {
