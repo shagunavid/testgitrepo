@@ -22,7 +22,7 @@ resource "aws_eip" "ip_now" {
 resource "aws_s3_bucket" "example" {
 
   bucket = "terraform-getting-started-guide"
-  acl    = "private"
+  acl    = "public"
 }
 
 resource "aws_kms_key" "a" {
@@ -44,7 +44,7 @@ resource "aws_lb" "test" {
   security_groups    = ["${aws_security_group.lb_sg.id}"]
   subnets            = ["${aws_subnet.public.*.id}"]
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
   access_logs {
     bucket  = "${aws_s3_bucket.lb_logs.bucket}"
