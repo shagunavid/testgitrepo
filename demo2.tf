@@ -67,7 +67,7 @@ resource "aws_db_instance" "default" {
   username             = "foo"
   password             = "foobarbaz"
   parameter_group_name = "default.mysql5.7"
-  storage_encrypted = true
+  storage_encrypted = false
 }
 
 # Create a new replication instance

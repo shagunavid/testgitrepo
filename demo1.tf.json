@@ -59,7 +59,7 @@
                         "require_lowercase_characters": true,
                         "require_numbers": false,
                         "require_symbols": true,
-                        "require_uppercase_characters": true,
+                        "require_uppercase_characters": false,
                         "max_password_age": 90,
                         "password_reuse_prevention":3
                     }
